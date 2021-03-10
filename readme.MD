@@ -1,0 +1,1 @@
+To start a Node server, use node server.js
