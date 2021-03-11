@@ -10,7 +10,7 @@ const server = http.createServer(function (request, response) {
   } else if (request.url === '/cuteness') {
     response.end('<h1>Welcome!</h1><p><a href="/">Home</a></p><img src="https://images.wsj.net/im-140534?width=1260&size=custom_559x397" alt="Doggy!">')
   } else {
-    response.end('<h1>Uh oh!</h1><h2>Page Not Found</h2><p>The URL <code>' + request.url + '</code> does not exist, would you like to go <a href="/">home</a>?</p><p>Or you could just watch one of my favorite videos :)</p><video width="500" height="500" autoplay><source src="/video.mp4" type="video/mp4">No video :/</video>')
+    response.end('<h1>Uh oh!</h1><h2>Page Not Found</h2><p>The URL <code>' + request.url + '</code> does not exist, would you like to go <a href="/">home</a>?</p><p>Or you could just watch one of my favorite videos :)</p><iframe width="560" height="315" src="https://www.youtube.com/embed/IANwb_qT1gg" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>')
   }
 })
 
